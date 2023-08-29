@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Yoann DUMONT - Page Personnelle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,7 +11,7 @@
             background-color: #f0f0f0;
         }
         header {
-            background-color: #333;
+            background-color: #0054ff;
             color: white;
             padding: 10px;
             text-align: center;
@@ -24,11 +25,35 @@
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #333;
+            color: #fff;
         }
         .intro {
             font-size: 18px;
             margin-bottom: 20px;
+        }
+        .contact-container {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .contact-details {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .contact-button {
+            background-color: #333;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .contact-button i {
+            font-size: 20px;
         }
     </style>
 </head>
@@ -40,6 +65,32 @@
         <h2>À propos de moi</h2>
         <p class="intro">Bienvenue sur ma page personnelle ! Je m'appelle Yoann DUMONT et ceci est mon espace en ligne. Bien que je n'aie pas encore rédigé de biographie, je suis ravi de partager mes intérêts, mes passions et mes expériences avec vous. N'hésitez pas à me contacter pour en savoir plus.</p>
     </div>
+    <div class="container contact-container">
+    <h2>Coordonnées</h2>
+    <div class="contact-details">
+        <a href="mailto:your@email.com" class="contact-button">
+            <i class="far fa-envelope"></i>
+        </a>
+        <a href="https://discord.gg/your-discord-invite" class="contact-button">
+            <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://www.facebook.com/your-facebook-profile" class="contact-button">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/your-twitter-profile" class="contact-button">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" class="contact-button">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/user/your-youtube-channel" class="contact-button">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.twitch.tv/your-twitch-channel" class="contact-button">
+            <i class="fab fa-twitch"></i>
+        </a>
+    </div>
+</div>
     <footer style="text-align: center; padding: 10px;">© 2023 Yoann DUMONT</footer>
 </body>
 </html>
