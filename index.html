@@ -45,6 +45,11 @@
             justify-content: space-around;
             align-items: center;
         }
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
         .contact-button {
             background-color: #333;
             color: white;
@@ -56,8 +61,15 @@
             align-items: center;
             text-decoration: none;
         }
+        .dev {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
         .contact-button i {
-            font-size: 20px;
+            font-size: 35px;
         }
     </style>
 </head>
@@ -69,10 +81,21 @@
     </header>
     <div class="container">
         <h2>À propos de moi</h2>
-        <p class="intro">Bienvenue sur ma page personnelle ! Je m'appelle Yoann DUMONT et ceci est mon espace en ligne. Bien que je n'aie pas encore rédigé de biographie, je suis ravi de partager mes intérêts, mes passions et mes expériences avec vous. N'hésitez pas à me contacter pour en savoir plus.</p>
+        <p class="intro">Bienvenue sur ma page personnelle ! Je m'appelle Yoann DUMONT et ceci est mon site internet. N'hésitez pas à me contacter pour en savoir plus.</p>
     </div>
+    <div class="skills container">
+    <h2>Mes compétences</h2>
+    <div class="skills-container">
+        <img src="sources/csharp.svg" alt="C#" title="C#" width="50" height="50" class="dev"> 
+        <img src="sources/python.svg" alt="Python" title="Python" width="50" height="50" class="dev">
+        <img src="sources/html.svg" alt="HTML" title="HTML" width="50" height="50" class="dev">        
+        <img src="sources/css.svg" alt="CSS" title="CSS" width="50" height="50" class="dev">
+        <img src="sources/unity.svg" alt="Unity" title="Unity" width="50" height="50" class="dev">
+        <img src="sources/github.svg" alt="GitHub" title="GitHub" width="50" height="50" class="dev">
+    </div>
+</div>
     <div class="container contact-container">
-    <h2>Coordonnées</h2>
+    <h2>Mes coordonnées</h2>
     <div class="contact-details">
         <a href="mailto:yoann.dumont@outlook.com" class="contact-button">
             <i class="far fa-envelope"></i>
@@ -80,21 +103,9 @@
         <a href="https://discordapp.com/users/1123534156626939945" class="contact-button">
             <i class="fab fa-discord"></i>
         </a>
-        <!-- <a href="https://www.facebook.com/your-facebook-profile" class="contact-button">
-            <i class="fab fa-facebook"></i>
-        </a> -->
-        <!-- <a href="https://twitter.com/your-twitter-profile" class="contact-button">
-            <i class="fab fa-twitter"></i>
-        </a> -->
-        <!-- <a href="https://www.linkedin.com/in/your-linkedin-profile" class="contact-button">
-            <i class="fab fa-linkedin"></i>
-        </a> -->
         <a href="https://youtube.com/@YoannDUMONT?si=xe6iES9SFuw-EAwB" class="contact-button">
             <i class="fab fa-youtube"></i>
         </a>
-        <!-- <a href="https://www.twitch.tv/your-twitch-channel" class="contact-button">
-            <i class="fab fa-twitch"></i>
-        </a> -->
     </div>
 </div>
     <footer style="text-align: center; padding: 10px;">© 2023 Yoann DUMONT</footer>
