@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Yoann DUMONT - Page Personnelle</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -9,11 +10,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-        }
+            background-color: #282c35; /* Couleur de fond sombre */
+            color: #fff; /* Couleur du texte clair */        }
+
         header {
-            background-color: #0054ff;
-            color: white;
+            background-color: #28247d; /* Couleur du header sombre */            
+            color: #fff;
             padding: 10px;
             text-align: center;
         }
@@ -22,35 +24,43 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: white;
+            background-color: #1a1f28;
+            color: #fff;
             border-radius: 5px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #fff;
-        }
+
+        h1, h2, h3, h4, h5, h6 {
+    color: #fff; /* Couleur du texte clair pour les titres */
+}
+
         a {
             text-decoration: none;
         }
+
         .intro {
             font-size: 18px;
             margin-bottom: 20px;
+            color: #ddd;
         }
+
         .contact-container {
             margin-top: 20px;
-            border-top: 1px solid #ccc;
             padding-top: 20px;
         }
+
         .contact-details {
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
+
         .skills-container {
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
+
         .contact-button {
             background-color: #333;
             color: white;
@@ -62,6 +72,7 @@
             align-items: center;
             text-decoration: none;
         }
+
         .dev {
             padding: 15px 25px;
             border: none;
@@ -69,70 +80,74 @@
             display: flex;
             align-items: center;
         }
+
         .contact-button i {
             font-size: 35px;
         }
-        .hljs {
-  padding: 0.6rem 2rem;
-  background: black;
-  border: none;
-  border-radius: 5px;
-  transition: all 0.2s;
-}
 
-.hljs:hover {
-  border-color: #ff4754;
-}
+        .hljs {
+            padding: 0.6rem 2rem;
+            background: black;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+
+        .hljs:hover {
+            border-color: #ff4754;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <a href="https://theyerminator.github.io/Yoann-DUMONT/">
-        <h1>Yoann DUMONT</h1>
-</a>
+            <a href="https://theyerminator.github.io/Yoann-DUMONT/">
+                <h1>Yoann DUMONT</h1>
+            </a>        
     </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
     <div class="container">
         <h2>À propos de moi</h2>
         <p class="intro">Bienvenue sur ma page personnelle ! Je m'appelle Yoann DUMONT et ceci est mon site internet. N'hésitez pas à me contacter pour en savoir plus.</p>
     </div>
     <div class="skills container">
-    <h2>Mes compétences</h2>
-    <div class="skills-container">
-        <img src="sources/csharp.svg" alt="C#" title="C#" width="50" height="50" class="dev"> 
-        <img src="sources/python.svg" alt="Python" title="Python" width="50" height="50" class="dev">
-        <img src="sources/html.svg" alt="HTML" title="HTML" width="50" height="50" class="dev">        
-        <img src="sources/css.svg" alt="CSS" title="CSS" width="50" height="50" class="dev">
-        <img src="sources/unity.svg" alt="Unity" title="Unity" width="50" height="50" class="dev">
-        <img src="sources/github.svg" alt="GitHub" title="GitHub" width="50" height="50" class="dev">
-    </div>
-    <pre>
-  <code class="csharp">
+        <h2>Mes compétences</h2>
+        <div class="skills-container">
+            <img src="sources/csharp.svg" alt="C#" title="C#" width="50" height="50" class="dev">
+            <img src="sources/python.svg" alt="Python" title="Python" width="50" height="50" class="dev">
+            <img src="sources/html.svg" alt="HTML" title="HTML" width="50" height="50" class="dev">
+            <img src="sources/css.svg" alt="CSS" title="CSS" width="50" height="50" class="dev">
+            <img src="sources/unity.svg" alt="Unity" title="Unity" width="50" height="50" class="dev">
+            <img src="sources/github.svg" alt="GitHub" title="GitHub" width="50" height="50" class="dev">
+        </div>
+        <pre>
+            <code class="csharp">
     Console.WriteLine("Hello World!");
   </code>
-  <code class="python">
+            <code class="python">
     print("Hello World!")
   </code>
-</pre>
-</div>
-    <div class="container contact-container">
-    <h2>Mes coordonnées</h2>
-    <div class="contact-details">
-        <a href="mailto:yoann.dumont@outlook.com" class="contact-button">
-            <i class="far fa-envelope"></i>
-        </a>
-        <a href="https://discordapp.com/users/1123534156626939945" class="contact-button">
-            <i class="fab fa-discord"></i>
-        </a>
-        <a href="https://youtube.com/@YoannDUMONT?si=xe6iES9SFuw-EAwB" class="contact-button">
-            <i class="fab fa-youtube"></i>
-        </a>
+        </pre>
     </div>
-</div>
+    <div class="container contact-container">
+        <h2>Mes coordonnées</h2>
+        <div class="contact-details">
+            <a href="mailto:yoann.dumont@outlook.com" class="contact-button">
+                <i class="far fa-envelope"></i>
+            </a>
+            <a href="https://discordapp.com/users/1123534156626939945" class="contact-button">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://youtube.com/@YoannDUMONT?si=xe6iES9SFuw-EAwB" class="contact-button">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
     <footer style="text-align: center; padding: 10px;">© 2023 Yoann DUMONT</footer>
 </body>
+
 </html>
