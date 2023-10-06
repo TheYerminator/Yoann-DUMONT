@@ -3,6 +3,7 @@
 <head>
     <title>Yoann DUMONT - Page Personnelle</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -71,6 +72,17 @@
         .contact-button i {
             font-size: 35px;
         }
+        .hljs {
+  padding: 0.6rem 2rem;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.hljs:hover {
+  border-color: #ff4754;
+}
     </style>
 </head>
 <body>
@@ -79,6 +91,11 @@
         <h1>Yoann DUMONT</h1>
 </a>
     </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
     <div class="container">
         <h2>À propos de moi</h2>
         <p class="intro">Bienvenue sur ma page personnelle ! Je m'appelle Yoann DUMONT et ceci est mon site internet. N'hésitez pas à me contacter pour en savoir plus.</p>
@@ -93,6 +110,14 @@
         <img src="sources/unity.svg" alt="Unity" title="Unity" width="50" height="50" class="dev">
         <img src="sources/github.svg" alt="GitHub" title="GitHub" width="50" height="50" class="dev">
     </div>
+    <pre>
+  <code class="csharp">
+    Console.WriteLine("Hello World!");
+  </code>
+  <code class="python">
+    print("Hello World!")
+  </code>
+</pre>
 </div>
     <div class="container contact-container">
     <h2>Mes coordonnées</h2>
